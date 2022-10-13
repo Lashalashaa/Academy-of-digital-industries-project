@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Magali xarisxi da DAbali Fasebi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="twitter:card" content="summary">
+    <meta property="og:title" content="My Cottage.ge">
+    <meta property="og:type" content="img">
+    <meta property="og:url" content="#">
+    <meta property="og:image" content="#">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="icons/icon.ico">
+    <title>My Cottage.ge</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <a href="index.html">PROJECTS</a>
+        </h1>
+        <nav id="nav"></nav>
+
+
+    </header>    
+    <main>
+        <div class="social">
+            <div class="fb"><a href="https://www.facebook.com/" target="_blank" rel="unfollow"></a></div>
+        </div>
+        <div class="social2"> <div class="insta"><a href="https://www.instagram.com/" target="_blank" rel="unfollow"></a></div></div>
+
+        <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><a href="cottages.html"><img src="img/first.jpg" alt="Slider"></a></div>
+            <div class="swiper-slide"><a href="cottages.html"><img src="img/second.jpg" alt="Slider"></a></div>
+            <div class="swiper-slide"><a href="cottages.html"><img src="img/mesame.jpg" alt="Slider"></a></div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
+
+    </main>
+    <footer>
+
+        <div class="border"></div>
+
+
+        <div class="martkutxedi"><img src="icons/icon.ico" alt="#"> </div>
+
+            <p class="sendmessagebutton" onclick="showchatbox()">
+                მოგვწერეთ შეტყობინება
+                <span id="status"></span>
+            </p>
+    
+        <div class="messagebox" id="messagebox">
+            <div class="messageboxheader">
+                <p>
+                    მოგვწერეთ შეტყობინება
+                </p>
+                <p class="close" onclick="hidechatbox()">
+                    &#x2715;
+                </p>
+            </div>
+            <div class="messageboxmain">
+                <input type="text" name="firstname" id="firstname" placeholder="ჩაწერეთ თქვენი სახელი">
+                <input type="email" name="email" id="email" placeholder="ჩაწერეთ თქვენი მეილი">
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="ჩაწერეთ თქვენი შეტყობინება"></textarea>
+                <p class="send" onclick="hidechatboxwithstatus()">გაგზავნა</p>
+            </div>
+        </div>
+    
+            <div class="footersocial">
+                <div class="fbb"><a href="https://www.facebook.com/" target="_blank" rel="unfollow"></a></div>
+            </div>
+            
+            <div class="footersocial2"> 
+                <div class="instaa"><a href="https://www.instagram.com/" target="_blank" rel="unfollow"></a>
+                </div>
+        </div>
+
+        <div class="pteg">
+            <p>2022 © My Cottage.ge - ყველა უფლება დაცულია</p> 
+        </div>
+
+    </footer>  
+
+    <script src="JS/chatbox.js"></script>
+    <script src="JS/scripts.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.swiper', {
+            autoplay: {
+                delay: 1700,
+                disableOnInteraction: false,
+            },
+        loop: true,
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        });
+    </script>
+
+</body>
+</html>
